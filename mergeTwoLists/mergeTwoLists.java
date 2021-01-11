@@ -9,7 +9,7 @@
  * }
  */
 
-public static ListNode  mergeTwoLists(ListNode l1, ListNode l2) {
+public ListNode  mergeTwoLists(ListNode l1, ListNode l2) {
 	ListNode head = new ListNode();
 	ListNode p = head;
 	ListNode p1 = l1;

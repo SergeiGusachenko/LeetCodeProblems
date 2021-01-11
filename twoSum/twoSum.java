@@ -1,4 +1,4 @@
-public static int[] twoSum(int[] nums, int target) {
+public int[] twoSum(int[] nums, int target) {
 	int first = 0;
 	int second = 0;
 	Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();

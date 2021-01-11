@@ -10,7 +10,7 @@
  * }
  */
 
-public static ListNode swapPairs(ListNode head) {
+public  ListNode swapPairs(ListNode head) {
 	ListNode result = new ListNode();
 	result.next = head;
 	ListNode current = result;

@@ -1,5 +1,5 @@
 
-public static int[] plusOne(int[] digits) {
+public int[] plusOne(int[] digits) {
 	int mem = 1;
 	int[] array = new int[digits.length + 1];
 	for(int i = digits.length - 1; i >= 0; i--){
