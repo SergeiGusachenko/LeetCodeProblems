@@ -12,7 +12,6 @@ public ListNode oddEvenList(ListNode head) {
 	while(odd != null && odd.next != null && odd.next.next != null)
 	{
 		ListNode tmp = even.next.next;
-		ListNode next_even = even.next;
 		odd.next = odd.next.next;
 		even.next = tmp;
 		even = tmp;
