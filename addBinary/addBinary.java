@@ -1,6 +1,13 @@
 package addBinary;
 
 public class addBinary {
+	// One line solution using BigInteger class ;
+	public static String addBinary(String a, String b) {
+        return new BigInteger(a,2).add(new BigInteger(b,2)).toString(2);
+    }
+
+	//Brute force solution using StringBuilder.
+
 	public static String addBinary(String a, String b) {
         boolean ostatok = false;
         int size = Math.max(a.length(), b.length());
