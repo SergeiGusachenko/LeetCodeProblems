@@ -1,7 +1,7 @@
 package invalidTransactions;
 
 public class invalidTransactions {
-	public static List<String> invalidTransactions(String[] transactions) {
+    public static List<String> invalidTransactions(String[] transactions) {
         boolean [] check = new boolean[transactions.length];
         List<String> result = new ArrayList<>();
         for(int i = 0; i < transactions.length; i++){
