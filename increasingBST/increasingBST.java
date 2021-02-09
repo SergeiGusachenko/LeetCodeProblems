@@ -1,6 +1,7 @@
 package increasingBST;
 
 public class increasingBST {
+	private static TreeNode prev = null;
 	private static void incre(TreeNode root) {
         if (root == null)
             return;
