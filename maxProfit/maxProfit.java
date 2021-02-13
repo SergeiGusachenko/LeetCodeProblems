@@ -12,4 +12,18 @@ public class maxProfit {
         }
         return final_max;
     }
+
+    //medium task max profit with fee
+    public static int maxProfit(int[] prices, int fee) {
+        int max = 0;
+        int stocks = -prices[0];
+        for(int i = 0; i < prices.length; i++){
+            if(max < stocks + prices[i] - fee )
+                max = stocks + prices[i] - fee;
+            if(stocks < max - prices[i])
+                stocks = max -prices[i];
+        }
+        return max;
+    }
+
 }
