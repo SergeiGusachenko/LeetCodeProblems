@@ -23,5 +23,5 @@ public class 22. Generate Parentheses {
 			{
 				findAll(curr+")",open,close+1, result, n);
 			}
-		}`
+		}
 }
