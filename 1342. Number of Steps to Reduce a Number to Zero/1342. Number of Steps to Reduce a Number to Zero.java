@@ -11,4 +11,19 @@ public class 1342. Number of Steps to Reduce a Number to Zero {
             numberOfSteps(num - 1);
         return result;
     }
+
+	/// Using bitwise operations
+
+	public static int numberOfSteps (int num) {
+        int result = 0;
+        while(num > 0){
+            int i = num & 1;
+            if(i == 1  && num > 1)
+                result += 2;
+            else
+                result+= 1;
+            num = num >> 1;
+        }
+        return result;
+    }
 }
